@@ -2,7 +2,7 @@
 
 common() {
     tmux setw -g mode-keys vi
-    tmux set -g set-clipboard off
+    tmux set -g set-clipboard external
     tmux bind-key -T copy-mode-vi v send-keys -X begin-selection
     tmux bind-key -T copy-mode-vi H send-keys -X start-of-line
     tmux bind-key -T copy-mode-vi L send-keys -X end-of-line
